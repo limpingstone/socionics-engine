@@ -1,5 +1,11 @@
+#!/usr/bin/env python3
+#
+# cognitive_function.py - By Steven Chen Hao Nyeo 
+# The script that creates the eight cognitive functions in socionics
+# Created: January 1, 2019
+
 class CognitiveFunction: 
-	def __init__ (self, label, description)
+	def __init__ (self, label, description):
 		self.label = label
 		self.description = description
 		
