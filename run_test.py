@@ -8,6 +8,7 @@ from cognitive_function import *
 from entity import Entity
 from value import Value
 from strength import Strength
+from consciousness import Consciousness
 
 e = Entity(Te, Ni, Se, Fi, Ti, Ne, Si, Fe)
 
@@ -15,3 +16,5 @@ Value.generate_order(e)
 Value.generate_chart(e)
 
 Strength.generate_chart(e)
+
+Consciousness.generate_chart(e)
