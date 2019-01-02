@@ -6,5 +6,9 @@
 
 from cognitive_function import *
 from entity import Entity
+from value import Value
 
 e = Entity(Te, Ni, Se, Fi, Ti, Ne, Si, Fe)
+
+Value.generate_order(e)
+Value.generate_chart(e)
