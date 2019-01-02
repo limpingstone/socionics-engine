@@ -6,6 +6,12 @@
 
 from cognitive_function import *
 
+# Rules of generating the list of Jungian cognitive functions: 
+# The order of sublabels are either [e, i, e, i, e, i, e, i] or [i, e, i, e, i, e, i, e]
+# The order of labels for the shadowing functions (last four) corresponds to the primary functions (first four) 
+# The dominant and inferior functions are opposites (either a pair of N / S or T / F)
+# The auxiliary and tertiary functions are opposites (either a pair of N / S or T / F)
+
 class Entity: 
 	def __init__ (self, *functions): 
 		

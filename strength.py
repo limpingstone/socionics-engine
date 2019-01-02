@@ -5,11 +5,11 @@
 # Created: January 1, 2019
 
 class Strength: 
+	# The helper method that generates the order of strength 
 	def generate_order (entity):
-		
 		strengths = []
 		
-		# Rearrange the order of value into strength
+		# Rearrange the order of value into order of strength
 		strengths.append(entity.values[0])
 		strengths.append(entity.values[5])
 		strengths.append(entity.values[1])
@@ -19,8 +19,10 @@ class Strength:
 		strengths.append(entity.values[3])
 		strengths.append(entity.values[6])
 		
+		# Return the result for the chart 
 		return strengths
 		
+	# The function that generates the chart showing the order of strength
 	def generate_chart (entity):
 		print("| 8  # ")
 		print("| 7  #  # ")
@@ -34,3 +36,4 @@ class Strength:
 		for strength in Strength.generate_order (entity):
 			print(strength.label + strength.sublabel, end=' ')
 		print() # New line for last element
+		

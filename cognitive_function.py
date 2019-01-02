@@ -4,6 +4,8 @@
 # The script that creates the eight cognitive functions in socionics
 # Created: January 1, 2019
 
+# Label - F or T or N or S 
+# Sublabel - i or e
 class CognitiveFunction: 
 	def __init__ (self, label, name, description):
 		self.label = label[0]
