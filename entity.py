@@ -6,8 +6,8 @@
 
 class Entity: 
 	def __init__ (self, *functions): 
-		values = []
+		self.values = []
 		for function in functions: 
-			values.append(function)
-		for value in values:
-			print(value.label)
+			self.values.append(function)
+		# for value in values:
+		# 	print(value.label)
