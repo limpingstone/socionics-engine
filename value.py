@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 #
 # value.py - By Steven Chen Hao Nyeo 
-# The class that generates order of value
+# The class containing functions that generate order of value
 # Created: January 1, 2019
 
 import sys

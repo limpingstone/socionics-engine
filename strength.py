@@ -1,11 +1,25 @@
 #!/usr/bin/env python3
 #
 # strength.py - By Steven Chen Hao Nyeo 
-# The class that generates order of strength
+# The class containing functions that generate order of strength
 # Created: January 1, 2019
 
 class Strength: 
 	def generate_order (entity):
+		
+		strengths = []
+		
+		# Rearrange the order of value into strength
+		strengths.append(entity.values[0])
+		strengths.append(entity.values[5])
+		strengths.append(entity.values[1])
+		strengths.append(entity.values[4])
+		strengths.append(entity.values[2])
+		strengths.append(entity.values[7])
+		strengths.append(entity.values[3])
+		strengths.append(entity.values[6])
+		
+		return strengths
 		
 	def generate_chart (entity):
 		print("| 8  # ")
@@ -17,6 +31,6 @@ class Strength:
 		print("| 2  #  #  #  #  #  #  # ")
 		print("| 1  #  #  #  #  #  #  #  # ")
 		print(" --------------------------\n    ", end='')
-		for value in entity.values:
-			print(value.label, end=' ')
+		for strength in Strength.generate_order (entity):
+			print(strength.label, end=' ')
 		print() # New line for last element
