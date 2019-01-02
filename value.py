@@ -8,9 +8,11 @@ import sys
 
 class Value: 
 	def generate_order (entity):
-		for value in entity.values:
-			print(value.label, end=', ')
-		print() # New line for last element
+		return entity.values
+		
+		# for value in entity.values:
+		# 	print(value.label, end=', ')
+		# print() # New line for last element
 		
 	def generate_chart (entity):
 		print("| 8  # ")
@@ -22,7 +24,7 @@ class Value:
 		print("| 2  #  #  #  #  #  #  # ")
 		print("| 1  #  #  #  #  #  #  #  # ")
 		print(" --------------------------\n    ", end='')
-		for value in entity.values:
+		for value in Value.generate_order (entity):
 			print(value.label, end=' ')
 		print() # New line for last element
 		
