@@ -32,5 +32,5 @@ class Strength:
 		print("| 1  #  #  #  #  #  #  #  # ")
 		print(" --------------------------\n    ", end='')
 		for strength in Strength.generate_order (entity):
-			print(strength.label, end=' ')
+			print(strength.label + strength.sublabel, end=' ')
 		print() # New line for last element

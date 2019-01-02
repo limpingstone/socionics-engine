@@ -6,7 +6,8 @@
 
 class CognitiveFunction: 
 	def __init__ (self, label, name, description):
-		self.label = label
+		self.label = label[0]
+		self.sublabel = label[1]
 		self.name = name
 		self.description = description
 		

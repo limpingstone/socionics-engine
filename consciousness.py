@@ -33,6 +33,6 @@ class Consciousness:
 		print("| 1  #  #  #  #  #  #  #  # ")
 		print(" --------------------------\n    ", end='')
 		for conscious in Consciousness.generate_order (entity):
-			print(conscious.label, end=' ')
+			print(conscious.label + conscious.sublabel, end=' ')
 		print() # New line for last element
 			

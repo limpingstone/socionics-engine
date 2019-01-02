@@ -25,7 +25,7 @@ class Value:
 		print("| 1  #  #  #  #  #  #  #  # ")
 		print(" --------------------------\n    ", end='')
 		for value in Value.generate_order (entity):
-			print(value.label, end=' ')
+			print(value.label + value.sublabel, end=' ')
 		print() # New line for last element
 		
 		
