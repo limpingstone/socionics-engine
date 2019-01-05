@@ -13,7 +13,7 @@ from cognitive_function import *
 # The auxiliary and tertiary functions are opposites (either a pair of N / S or T / F)
 
 class Entity: 
-	def __init__ (self, *functions): 
+	def __init__ (self, functions): 
 		
 		self.values = []
 		for function in functions: 
