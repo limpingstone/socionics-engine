@@ -29,38 +29,32 @@ print("Personality: " +
 
 print("------------------------")
 
+def print_personality (string, entity): 
+	print(string + 
+		Translator.translate_orientation(entity) + 
+		Translator.translate_observing(entity) + 
+		Translator.translate_decision_making(entity) + 
+		Translator.translate_perception(entity))
+
 # Print the personality type of identity
-print("Identity: " + 
-      Translator.translate_orientation(e) + 
-      Translator.translate_observing(e) + 
-      Translator.translate_decision_making(e) + 
-      Translator.translate_perception(e))
-
-# Print the personality type of duality
-duality = [e.values[0].opposite().opposite_orientation(), e.values[1].opposite().opposite_orientation()]
-e_duality = Entity(duality)
-print("Duality: " + 
-      Translator.translate_orientation(e_duality) + 
-      Translator.translate_observing(e_duality) + 
-      Translator.translate_decision_making(e_duality) + 
-      Translator.translate_perception(e_duality))
-
-# Print the personality type of semi-duality
-semi_duality = [e.values[0].opposite().opposite_orientation(), e.values[1].opposite()]
-print(str(dom.label + dom.sublabel) + ", " + str(aux.label + aux.sublabel))
-e_semi_duality = Entity(semi_duality)
-print("Semi-duality: " + 
-      Translator.translate_orientation(e_semi_duality) + 
-      Translator.translate_observing(e_semi_duality) + 
-      Translator.translate_decision_making(e_semi_duality) + 
-      Translator.translate_perception(e_semi_duality))
-
+print_personality("Identity: ", e)
 
 # Print the personality type of mirror
 mirror = Function.reverse_order(e.values)
 e_mirror = Entity(mirror)
-print("Mirror: " + 
-      Translator.translate_orientation(e_mirror) + 
-      Translator.translate_observing(e_mirror) + 
-      Translator.translate_decision_making(e_mirror) + 
-      Translator.translate_perception(e_mirror))
+print_personality("Mirror: ", e_mirror)
+
+# Print the personality type of semi-duality
+semi_duality = [e.values[0].opposite().opposite_orientation(), e.values[1].opposite()]
+e_semi_duality = Entity(semi_duality)
+print_personality("Semi-duality: ", e_semi_duality)
+
+# Print the personality type of benefactor
+benefactor = Function.reverse_order([e.values[0].opposite().opposite_orientation(), e.values[1].opposite()])
+e_benefactor = Entity(benefactor)
+print_personality("Benefactor: ", e_benefactor)
+
+# Print the personality type of duality
+duality = [e.values[0].opposite().opposite_orientation(), e.values[1].opposite().opposite_orientation()]
+e_duality = Entity(duality)
+print_personality("Duality: ", e_duality)
