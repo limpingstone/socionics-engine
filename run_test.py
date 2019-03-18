@@ -15,10 +15,19 @@ from function_analysis import *
 # e = Entity(Te, Ni, Se, Fi, Ti, Ne, Si, Fe)
 e = Entity([Fi, Se])
 
+#e = Entity([Fe, Ni])
+
+#e = Entity([Te, Ni])
+
 # Generate the charts for value, strength and consciousness
+print("\nValue: ")
 Value.generate_chart(e)
+print("\nStrength: ")
 Strength.generate_chart(e)
+print("\nConsciousness: ")
 Consciousness.generate_chart(e)
+
+print("\n")
 
 # Print the personality type according to the dominant and auxiliary functions 
 print("Personality: " + 
