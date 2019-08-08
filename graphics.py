@@ -7,9 +7,6 @@
 import wx
 from cognitive_function import *
 from entity import Entity
-from value import Value
-from strength import Strength
-from consciousness import Consciousness
 from function_to_type import Translator
 from function_analysis import *
 
