@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 #
-# graphics.py - By Steven Chen Hao Nyeo 
+# main.py - By Steven Chen Hao Nyeo 
 # Graphical interface for Socionics Engine 
 # Created: August 8, 2019
 
