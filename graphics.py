@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 #
 # graphics.py - By Steven Chen Hao Nyeo 
-# Graphical interface for different personality types 
+# Graphical interface for Socionics Engine 
 # Created: August 8, 2019
 
 import wx
