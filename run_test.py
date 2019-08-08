@@ -13,7 +13,8 @@ from function_to_type import Translator
 from function_analysis import *
 
 # e = Entity(Te, Ni, Se, Fi, Ti, Ne, Si, Fe)
-e = Entity([Fi, Se])
+#e = Entity([Fi, Se])
+e = Entity([Se, Fi])
 
 #e = Entity([Fe, Ni])
 
